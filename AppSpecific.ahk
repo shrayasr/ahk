@@ -195,6 +195,25 @@ Send, v
 Send, ^v
 return
 
+;;;;; Visual Studio ;;;;;
+
+#IfWinActive ahk_exe devenv.exe
+
+F11::
+Send, // TODO
+Send, {Space}
+return
+
+!F11::
+Send, /*
+Send, {Enter}
+Send, TODO
+Send, {Enter}
+Send, /
+Send, {Up}
+Send, {End}
+Send, {Space}
+return
 
 ;;;;; Reset ;;;;;
 #IfWinActive ; Do not remove this line
