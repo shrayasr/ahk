@@ -35,3 +35,12 @@ return
 :*:,crf::**Fix:**`n`n
 :*:,crr::**Note to reviewer:**`n`n
 
+:*:,xrs::Suggestion: 
+:*:,xrq::Question: 
+
+
+;; Others
+
+:*:,emd::[Draft]
+:*:,nr::Rephrase: "
+:*:,nd::Drop
