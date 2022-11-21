@@ -38,22 +38,6 @@ Sleep 200
 
 return
 
-;;;;; Windows Taskbar Calendar ;;;;;
-#IfWinActive Date and Time Information ahk_class Windows.UI.Core.CoreWindow
-PgDn::
-Send, {Tab 2}{Enter}
-Send, +{Tab 2}
-return
-
-PgUp::
-Send, {Tab}{Enter}
-Send, +{Tab}
-return
-
-Home::
-Send, +{Tab}{Enter}{Tab}
-return
-
 ;;;;; Thunderbird ;;;;;
 
 ;#IfWinActive ahk_exe thunderbird.exe
