@@ -5,7 +5,7 @@ SetTime:
 	SIZE = 5
 	timeZone1 := "Berlin     : " . FormatTimeZone(2)
 	timeZone2 := "Singapore  : " . FormatTimeZone(8)
-	timeZone3 := "Austin     : " . FormatTimeZone(-6)
+	timeZone3 := "Austin     : " . FormatTimeZone(-5)
 	timeZone4 := "India      : " . FormatTimeZone(5.5)
   timeZone5 := "UTC        : " . FormatTimeZone(0)
 return
