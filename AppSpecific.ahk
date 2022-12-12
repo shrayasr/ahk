@@ -42,76 +42,21 @@ return
 
 #IfWinActive ahk_exe Notion.exe
 
-F1::
-; Set background to green
-Send, ^/
-Sleep 200
-Send, green b
-Sleep 800
-Send, {Enter}
-return
-
-F2::
-; Set background to orange
-Send, ^/
-Sleep 200
-Send, orange b
-Sleep 800
-Send, {Enter}
-return
-
-F3::
-; Set background to red
-Send, ^/
-Sleep 200
-Send, red b
-Sleep 800
-Send, {Enter}
-return
-
-F5::
-; Green check emoji
-Send, :green_chec
-Sleep 100
-Send, {Enter}
-return
-
-F6::
-; alert emoji
-Send, :alert
-Sleep 100
-Send, {Enter}
-return
-
-F7::
-; red cross emoji
-Send, :red_cross
-Sleep 100
-Send, {Enter}
-return
-
-F8::
-; red alert emoji
-Send, :alert_re
-Sleep 100
-Send, {Enter}
-return
-
-F10::
-; Set background to default
-Send, ^/
-Sleep 200
-Send, default
-Sleep 800
-Send, {Enter}
-return
-
 ^+L::
 ; Copy link to current block
 Send, ^/
 Sleep 200
 Send, copy
 Sleep 800
+Send, {Enter}
+return
+
+^+V::
+Clipboard := StrReplace(Clipboard, "https", "notion", 1)
+Send, #r
+Sleep 200
+Send, ^v
+Sleep 100
 Send, {Enter}
 return
 
