@@ -149,7 +149,11 @@ return
 
 F1::
 ; Create tag (from clipboard)
-Send, ^+v
+Send, ^+p
+Sleep 100
+Send, createtag
+Sleep 200
+Send, {Enter}
 Sleep 100
 Send, v
 Sleep 100
