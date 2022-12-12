@@ -67,7 +67,7 @@ return
 ;; RAlt Shift F
 ;; Firefox -- Sundarakala Profile
 <^>!+f::
-ActivateOrLaunch("Firefox", "C:\Program Files\Mozilla Firefox\firefox.exe -p sundarakala")
+ActivateOrLaunch("Firefox", "C:\Program Files\Mozilla Firefox\firefox.exe -p Sundarakala")
 return
 
 ;; RAlt W
@@ -134,7 +134,7 @@ return
 ;; RAlt F2
 ;; Edit Script
 <^>!F2::
-Run, "C:\tools\vim\vim82\gvim.exe" "D:\bin\ahk\keys.ahk",,max
+Run, "C:\tools\vim\vim90\gvim.exe" "D:\bin\ahk\keys.ahk",,max
 return
 
 ;; RAlt -
