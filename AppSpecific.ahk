@@ -191,5 +191,19 @@ Send, {End}
 Send, {Space}
 return
 
+;;;;; Notepad3 ;;;;;
+
+#IfWinActive ahk_exe Notepad3.exe
+
+F1::
+Send, ^0
+Sleep 100
+return
+
+F2::
+Send, ^{NumpadAdd 10}
+Sleep 100
+return
+
 ;;;;; Reset ;;;;;
 #IfWinActive ; Do not remove this line
