@@ -52,6 +52,8 @@ Send, {Enter}
 return
 
 ^+V::
+; Open link in clipboard (assumed to be a notion link) in notion instead
+; of in the browser
 Clipboard := StrReplace(Clipboard, "https", "notion", 1)
 Send, #r
 Sleep 200
