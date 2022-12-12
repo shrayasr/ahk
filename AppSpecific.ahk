@@ -38,34 +38,6 @@ Sleep 200
 
 return
 
-;;;;; Thunderbird ;;;;;
-
-;#IfWinActive ahk_exe thunderbird.exe
-;
-;<^>!Delete::
-;; Creates a delete filter out of the address that sent me the
-;; email and waits for me to confirm. Once it is confirmed
-;; with another hotkey, it will run the filters
-;Send, !m
-;Sleep 200
-;Send, {Up 4}
-;Send, {Enter}
-;Sleep 500
-;Send, {Tab 13}
-;Send, d
-;Send {Tab 14}
-;Send, c
-;Send {Tab}
-;Send {Home}
-;return
-;
-;#IfWinActive Filter Rules ahk_exe thunderbird.exe
-;<^>!Enter::
-;Send, +{Tab}{Enter}
-;Sleep 1000
-;Send, !r
-;return
-
 ;;;;; Notion ;;;;;
 
 #IfWinActive ahk_exe Notion.exe
