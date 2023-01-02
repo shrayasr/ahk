@@ -34,9 +34,17 @@ return
 :*:,crx::**Blocked:**`n`n
 :*:,crf::**Fix:**`n`n
 :*:,crr::**Note to reviewer:**`n`n
+:*:,crn::
+Send, **Rename:**`n`n to
+Send, {left 3}
+return
 
 :*:,xrs::Suggestion: 
 :*:,xrq::Question: 
+
+;; Common paths
+:*:,/wc::D:\work\code\
+:*:,/d::D:\dump
 
 
 ;; Others
