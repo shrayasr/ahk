@@ -62,6 +62,13 @@ Sleep 100
 Send, {Enter}
 return
 
+^+C::
+Send, ^l
+Sleep 500
+Clipboard := StrReplace(Clipboard, "www.notion.so", "www.notion.so/native", 1)
+TrayTip, Done, Copied native notion URL, 10, 1
+return
+
 ;;;;; Key Pirinha ;;;;;
 
 #IfWinActive ahk_exe keypirinha-x64.exe

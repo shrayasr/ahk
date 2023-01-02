@@ -214,3 +214,16 @@ Send {Enter}
 Sleep 400
 Send {Tab}
 return
+
+;Localhost URL
+<^>!2:: 
+Input, SingleKey, T1 L1, {enter}.{esc}{tab}, 0,1,2,3,4,5,6,7,8,9
+
+if(ErrorLevel == "Timeout" or ErrorLevel != "match")
+{
+    SingleKey := "0"
+}   
+
+endpoint := % "http://localhost:500" . SingleKey . "/"
+Run, "C:\Users\Shrayas\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe" %endpoint%,,max
+return
