@@ -179,5 +179,9 @@ Send, ^{NumpadAdd 10}
 Sleep 100
 return
 
+;;;;; Excel ;;;;;
+
+#IfWinActive ahk_exe EXCEL.exe
+
 ;;;;; Reset ;;;;;
 #IfWinActive ; Do not remove this line
