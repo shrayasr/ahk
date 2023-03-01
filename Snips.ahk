@@ -43,8 +43,8 @@ return
 :*:,xrq::Question: 
 
 ;; Common paths
-:*:,/wc::D:\work\code\
-:*:,/d::D:\dump
+:*:,,wc::D:\work\code\
+:*:,,d::D:\dump
 
 
 ;; Others
