@@ -31,7 +31,7 @@ return
 ;; RAlt K
 ;; BitWarden
 <^>!k::
-ActivateOrLaunch("Bitwarden", "C:\Program Files\Bitwarden\Bitwarden.exe")
+ActivateOrLaunch("Bitwarden", "C:\Users\Shrayas\AppData\Local\Programs\Bitwarden\Bitwarden.exe")
 return
 
 ;; RAlt S
