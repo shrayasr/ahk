@@ -3,7 +3,7 @@ SetTime:
 	; Add however many time zones you want to display.
 	; Don't forget to modify the SIZE variable.
 	SIZE = 5
-	timeZone1 := "Berlin     : " . FormatTimeZone(2)
+	timeZone1 := "Berlin     : " . FormatTimeZone(1)
 	timeZone2 := "Singapore  : " . FormatTimeZone(8)
 	timeZone3 := "Austin     : " . FormatTimeZone(-5)
 	timeZone4 := "India      : " . FormatTimeZone(5.5)
