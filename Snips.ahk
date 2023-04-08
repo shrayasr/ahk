@@ -46,9 +46,3 @@ return
 :*:,,wc::D:\work\code\
 :*:,,d::D:\dump
 
-
-;; Others
-
-:*:,emd::[Draft]
-:*:,nr::Rephrase: "
-:*:,nd::Drop
