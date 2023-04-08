@@ -125,6 +125,18 @@ Send, v
 Send, ^v
 return
 
+F3::
+; run fetch --prune
+Send, ^+p
+Sleep 100
+Send, fetch
+Sleep 100
+Send, {Enter}
+Send, prune
+Sleep 100
+Send, {Enter}
+return
+
 ;;;;; Visual Studio ;;;;;
 
 #IfWinActive ahk_exe devenv.exe
@@ -179,9 +191,14 @@ Send, ^{NumpadAdd 10}
 Sleep 100
 return
 
-;;;;; Excel ;;;;;
+;;;;; Windows Terminal ;;;;;
 
-#IfWinActive ahk_exe EXCEL.exe
+#IfWinActive ahk_exe WindowsTerminal.exe
+
+F1::
+Send, gvim .\Shipit.json
+Sleep 100
+return
 
 ;;;;; Reset ;;;;;
 #IfWinActive ; Do not remove this line
