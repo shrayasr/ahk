@@ -1,3 +1,5 @@
+#Requires AutoHotkey v1.1.35
+
 #SingleInstance Force
 #NoEnv  
 #Warn
