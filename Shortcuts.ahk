@@ -136,7 +136,7 @@
     {
         portSuffix := "0"
     }
-    else if (nextKeyDetails.ErrorLevel = "EndKey")
+    else if (nextKeyDetails.errorLevel = "EndKey")
     {
         portSuffix := nextKeyDetails.selectedKey
     }
