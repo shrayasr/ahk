@@ -72,6 +72,27 @@ F3::
     Send("{Enter}")
 }
 
+^+b::
+{
+    newBranch := ShowCleanInputGUI("New branch name", "-")
+    if(WinWaitClose(newBranch.Hwnd))
+    {
+        global _cleanedInputValue
+
+        Send("^+b")
+        Sleep(200)
+
+        time := FormatTime(, "yyyy-MM-dd")
+        send("shrayasr/" . time . "/")
+
+        if(_cleanedInputValue != "")
+        {
+            send(_cleanedInputValue)
+        }
+    }
+
+}
+
 #HotIf
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -100,6 +121,30 @@ F1::
 {
     Send("gvim .\Shipit.json")
     Sleep(100)
+}
+
+#HotIf
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+#HotIf WinActive("ahk_exe devenv.exe")
+
+; Create a new migration file
+F1::
+{
+    newMigrationGUI := ShowCleanInputGUI("New migration name", "_")
+    if(WinWaitClose(newMigrationGUI.Hwnd))
+    {
+        global _cleanedInputValue
+
+        time := FormatTime(,"yyyyMMddHHmm")
+        send("V" . time . "__" . _cleanedInputValue . ".sql")
+
+        if(_cleanedInputValue = "")
+        {
+            send("{left 4}")
+        }
+    }
 }
 
 #HotIf

@@ -6,6 +6,8 @@ TraySetIcon("D:\bin\ahk\icon.ico")
 
 #Include Playground.ahk
 
+#Include GUI.ahk
+
 #Include AHKShortcuts.ahk
 #Include Shortcuts.ahk
 #Include Snippets.ahk
