@@ -133,23 +133,3 @@
     Send("https://ap.www.namecheap.com/domains/domaincontrolpanel//advancedns")
     Send("{left 11}")
 }
-
-;; ,dbm
-;; Hotstring to be typed into a "new file" VS
-;; Helps create a formatted file for DB migrations
-:*:,dbm::
-{
-    time := FormatTime(,"yyyyMMddHHmm")
-    send("V" . time . "__.sql")
-    send("{left 4}")
-}
-
-
-;; ,gbr
-;; Hotstring to be typed into a "new git branch" window
-;; Helps create a formatted git branch
-:*:,gbr::
-{
-    time := FormatTime(, "yyyy-MM-dd")
-    send("shrayasr/" . time . "/")
-}
