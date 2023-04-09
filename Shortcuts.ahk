@@ -124,3 +124,25 @@
         "C:\Program Files\Notepad3\Notepad3.exe"
     )
 }
+
+;; RAlt @
+;; Follow this by 0-9 and it will open localhost:500{key you pressed}
+<^>!@::
+{
+    portPrefix := "500"
+    
+    nextKeyDetails := WaitForNextKey("0123456789")
+    if(nextKeyDetails.errorLevel = "Timeout")
+    {
+        portSuffix := "0"
+    }
+    else if (nextKeyDetails.ErrorLevel = "EndKey")
+    {
+        portSuffix := nextKeyDetails.selectedKey
+    }
+
+    port := portPrefix . portSuffix
+    endpoint := "http://localhost:" . port 
+
+    Run(endpoint)
+}

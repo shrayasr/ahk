@@ -31,3 +31,19 @@ ActivateAndCycle(ahkExePhrase)
         }
     }
 }
+
+WaitForNextKey(viableNextKeys, timeout := "1.5")
+{
+    ih := InputHook("L1 T" . timeout)
+    ih.KeyOpt(viableNextKeys, "E")
+    ih.Start()
+
+    ErrorLevel := ih.Wait()
+
+    response :=  {
+        errorLevel: ErrorLevel,
+        selectedKey: ih.EndKey
+    }
+
+    return response
+}
