@@ -1,4 +1,6 @@
-﻿; LABELS
+﻿#Requires AutoHotkey v1.1.35
+
+; LABELS
 SetTime:
 	; Add however many time zones you want to display.
 	; Don't forget to modify the SIZE variable.

@@ -1,23 +1,13 @@
-#Requires AutoHotkey v1.1.35
+#Requires AutoHotkey v2.0
 
-#SingleInstance Force
-#NoEnv  
-#Warn
+TraySetIcon("D:\bin\ahk\icon.ico")
 
-SendMode, Input  
-SetWorkingDir, "D:\bin\ahk"  
-SetTitleMatchMode, 2
+#Include Functions.ahk
 
-I_Icon = D:\bin\ahk\icon.ico
-IfExist, %I_Icon%
-  Menu, Tray, Icon, %I_Icon%
-;return
+#Include Playground.ahk
 
-#include Playground.ahk
-
-#include Functions.ahk
-#include Keys.ahk
-#include TimeZone.ahk
-#include Snips.ahk
-#include Redacted.ahk
-#include AppSpecific.ahk
+#Include AHKShortcuts.ahk
+#Include Shortcuts.ahk
+#Include Snippets.ahk
+#Include Redacted.ahk
+#Include Apps.ahk

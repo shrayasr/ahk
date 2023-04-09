@@ -1,35 +1,33 @@
-﻿ActivateIfExists(name)
+ActivateOrLaunch(ahkExePhrase, launchPath)
 {
-  exist := WinExist(name)
-  if %exist%
-    WinActivate, %name%
+    if(WinActive(ahkExePhrase))
+    {
+        WinMinimize
+    }
+    else
+    {
+        if(WinExist(ahkExePhrase))
+        {
+            WinActivate(ahkExePhrase)
+        }
+        else
+        {
+            Run launchPath
+        }
+    }
 }
 
-; Function that either activates the window, if it exists or
-; launches the exe given
-ActivateOrLaunch(name, exeName, windowType:="max")
+ActivateAndCycle(ahkExePhrase)
 {
-  WinGet, currProcessPath, ProcessPath, A
-  if (currProcessPath = exeName)
-    WinMinimize, A
-  else
-  {
-    exist := WinExist(name)
-    if %exist%
-      WinActivate, %name%
-    else
-      if (windowType = "-")
-        Run %exeName%
-      else
-        Run, %exeName%,, max
-  }
-}
-
-ActivateAndCycle(exe)
-{
-  IfWinExist, ahk_exe %exe%
-    IfWinActive, ahk_exe %exe%
-      WinActivateBottom, ahk_exe %exe%
-    else
-      WinActivate, ahk_exe %exe%
+    if(WinExist(ahkExePhrase))
+    {
+        if (WinActive)
+        {
+            WinActivateBottom ahkExePhrase
+        }
+        else
+        {
+            WinActivate(ahkExePhrase)
+        }
+    }
 }
