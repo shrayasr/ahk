@@ -25,3 +25,14 @@
 
 :*:,,wc::D:\work\code\
 :*:,,d::D:\dump
+
+;;;;;;;;;;;;; Browser hotstrings
+
+;; ,nsdns
+;; Hotstring to be typed into a brower window 
+;; Helps edit DNS entries for that domain on namecheap.com
+:*:,nsdns::
+{
+    Send("https://ap.www.namecheap.com/domains/domaincontrolpanel//advancedns")
+    Send("{left 11}")
+}
