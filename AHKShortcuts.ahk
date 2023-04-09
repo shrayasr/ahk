@@ -10,7 +10,7 @@
 ;; Edit Script
 <^>!F2::
 {
-    Run("C:\tools\vim\vim90\gvim.exe `"D:\bin\ahk\keys.ahk`"")
+    Run("C:\tools\vim\vim90\gvim.exe `"D:\bin\ahk\Shortcuts.ahk`"")
 }
 
 
