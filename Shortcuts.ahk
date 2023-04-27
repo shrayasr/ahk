@@ -146,3 +146,18 @@
 
     Run(endpoint)
 }
+
+;; Pause Pause
+;; Play/Pause any currently playing media. To send a "pause", just press once
+Pause::
+{
+  nextKeyDetails := WaitForNextKey("{pause}")
+  if (nextKeyDetails.errorLevel = "EndKey")
+  {
+    Send("{Media_Play_Pause}")
+  }
+  else 
+  {
+    Send("{pause}")
+  }
+}
