@@ -14,17 +14,9 @@
 ; of in the browser
 F5::
 {
-    A_Clipboard := StrReplace(A_Clipboard, "https", "notion", 1)
-    Send("#r")
-    if(WinWaitActive("Run ahk_exe explorer.exe"))
-    {
-        Sleep(200)
-        Send("^v")
-        Sleep(200)
-        Send("{Enter}")
-
-        TrayTip "Done", "Opening link in notion"
-    }
+    notionURL := StrReplace(A_Clipboard, "https", "notion", 1)
+    Run(notionURL)
+    TrayTip "Done", "Opening link in notion"
 }
 
 #HotIf
