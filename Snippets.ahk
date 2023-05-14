@@ -24,7 +24,12 @@
 ;;;;;;;;;;;;; Common paths
 
 :*:,,wc::D:\work\code\
-:*:,,d::D:\dump
+:*:,,d::D:\dump\
+
+
+;;;;;;;;;;;;; Emojis
+
+:*:,,check::✅
 
 ;;;;;;;;;;;;; Browser hotstrings
 
