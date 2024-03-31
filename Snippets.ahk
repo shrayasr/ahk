@@ -41,3 +41,33 @@
     Send("https://ap.www.namecheap.com/domains/domaincontrolpanel//advancedns")
     Send("{left 11}")
 }
+
+;;;;;;;;;;;;; Saved queries
+
+;; ,nme
+;; Hotstring to be typed in a FairMPOS pgcli window (non SU login)
+:*:,nme::
+{
+  send("\n me")
+}
+
+;; ,nc
+;; Hotstring to be typed in a FairMPOS pgcli window (non SU login)
+:*:,nc::
+{
+  send("\n meconfig")
+}
+
+;; ,nt
+;; Hotstring to be typed in a FairMPOS pgcli window (SU login)
+:*:,nt::
+{
+  send("\n t")
+}
+
+;; ,nx
+;; Hotstring to be typed in a FairMPOS pgcli window (SU login)
+:*:,nx::
+{
+  send("\n nexttenant")
+}
