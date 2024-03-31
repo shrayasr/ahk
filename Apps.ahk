@@ -1,15 +1,5 @@
 #HotIf WinActive("ahk_exe Notion.exe")
 
-; Copy link to current block
-^+L::
-{
-    Send("^/")
-    Sleep(200)
-    Send("copy")
-    Sleep(800)
-    Send("{Enter}")
-}
-
 ; Open link in clipboard (assumed to be a notion link) in notion instead
 ; of in the browser
 F5::
