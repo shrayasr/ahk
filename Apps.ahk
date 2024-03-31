@@ -54,6 +54,7 @@ F3::
     Send("{Enter}")
 }
 
+;; Create new branch
 ^+b::
 {
     newBranch := ShowCleanInputGUI("New branch name", "-")
@@ -72,8 +73,14 @@ F3::
             send(_cleanedInputValue)
         }
     }
-
 }
+
+;; Run git push
+F5::
+{
+  Send("^!{up}")
+}
+
 
 #HotIf
 
