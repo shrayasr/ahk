@@ -1,3 +1,13 @@
+;; RAlt T 
+;; TickTick 
+<^>!t::
+{
+    activateorlaunch(
+        "ahk_exe TickTick.exe",
+        "C:\Program Files (x86)\TickTick\TickTick.exe"
+    )
+}
+
 ;; RAlt F 
 ;; Firefox 
 <^>!f::
@@ -69,12 +79,12 @@
 }
 
 ;; RAlt C 
-;; Brave
+;; Arc
 <^>!c::
 {
     ActivateOrLaunch(
-        "ahk_exe brave.exe",
-        "C:\Users\Shrayas\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe"
+        "ahk_exe Arc.exe",
+        "C:\Users\Shrayas\AppData\Local\Microsoft\WindowsApps\Arc.exe"
     )
 }
 
@@ -122,6 +132,16 @@
     ActivateOrLaunch(
         "ahk_exe Notepad3.exe",
         "C:\Program Files\Notepad3\Notepad3.exe"
+    )
+}
+
+;; RAlt 1
+;; Open Speedcrunch
+<^>!1::
+{
+    ActivateOrLaunch(
+        "ahk_exe speedcrunch.exe",
+        "D:\bin\speedcrunch\speedcrunch.exe"
     )
 }
 
