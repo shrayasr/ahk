@@ -1,3 +1,47 @@
+#HotIf WinActive("ahk_exe Arc.exe")
+
+; Open new SQL Editor
+^PgDn::
+{
+  Send("^!{Down}")
+}
+
+; Open DB Object search
+^PgUp::
+{
+  Send("^!{Up}")
+}
+
+
+#HotIf
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+#HotIf WinActive("ahk_exe dbeaver.exe")
+
+; Open new SQL Editor
+F1::
+{
+  Send("^]")
+}
+
+; Open DB Object search
+F2::
+{
+  Send("^+d")
+}
+
+; Disconnect all connections
+F4::
+{
+  Send("^!+{F4}")
+}
+
+#HotIf
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 #HotIf WinActive("ahk_exe Notion.exe")
 
 ; Open link in clipboard (assumed to be a notion link) in notion instead
@@ -118,6 +162,12 @@ F1::
 
 #HotIf WinActive("ahk_exe devenv.exe")
 
+; Peek definition
+F13::
+{
+  Send("!{F12}")
+}
+
 ; Create a new migration file
 F1::
 {
@@ -134,6 +184,11 @@ F1::
             send("{left 4}")
         }
     }
+}
+
+F2::
+{
+  Send("^+t")
 }
 
 #HotIf
