@@ -10,15 +10,20 @@
 ;;;;;;;;;;;;;;; Used for code review on github
 
 :*:,crp::**Praise:**`n`n
-:*:,crnit::**Nitpick:**`n`n
-:*:,crl::**Nitpick:**`n`nSpelling Mistake: 
 :*:,crs::**Suggestion:**`n`n
+:*:,crn::**Note:**`n`n
 :*:,crq::**Question:**`n`n
 :*:,crt::**Thought:**`n`n
 :*:,crb::**Possible Bug:**`n`n
 :*:,crx::**Blocked:**`n`n
 :*:,crf::**Fix:**`n`n
 :*:,crr::**Note to reviewer:**`n`n
+
+:*:,ghn::
+{
+  send ("> [{!}NOTE]{enter}")
+  send ("> ")
+}
 
 
 ;;;;;;;;;;;;; Common paths
@@ -29,7 +34,8 @@
 
 ;;;;;;;;;;;;; Emojis
 
-:*:,,check::✅
+:*:;;check::✅
+:*:;;down::⤵️
 
 ;;;;;;;;;;;;; Browser hotstrings
 
@@ -40,6 +46,12 @@
 {
     Send("https://ap.www.namecheap.com/domains/domaincontrolpanel//advancedns")
     Send("{left 11}")
+}
+
+:*:,ipip::
+{
+  Send("icanhazip.com")
+  Send("{Enter}")
 }
 
 ;;;;;;;;;;;;; Saved queries
