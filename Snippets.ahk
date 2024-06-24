@@ -1,5 +1,11 @@
 :*:,ssys::curl -sL shrayas.com/simplesys | bash
 
+:*:,now::
+{
+    SendText(A_Year . "-" . A_MM . "-" . A_DD . "T" . A_Hour . ":" . A_Min)
+}
+
+
 ;;;;;;;;;;;;;;; Emails and Phone
 
 :*:,@w::shrayasr@logicsoft.co.in
