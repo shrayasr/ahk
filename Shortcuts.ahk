@@ -79,12 +79,12 @@
 }
 
 ;; RAlt C 
-;; Arc
+;; Brave
 <^>!c::
 {
     ActivateOrLaunch(
-        "ahk_exe Arc.exe",
-        "C:\Users\Shrayas\AppData\Local\Microsoft\WindowsApps\Arc.exe"
+        "ahk_exe brave.exe",
+        "C:\Users\Shrayas\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe"
     )
 }
 
