@@ -5,18 +5,23 @@
     SendText(A_Year . "-" . A_MM . "-" . A_DD . "T" . A_Hour . ":" . A_Min)
 }
 
+:*:,isonow::
+{
+    SendText(A_Year . A_MM . A_DD . "T" . A_Hour . A_Min)
+}
+
 
 ;;;;;;;;;;;;;;; Emails and Phone
 
-:*:,@w::shrayasr@logicsoft.co.in
-:*:,@p::shrayasr@gmail.com
-:*:,99::9940694149
+:*:@@w::shrayasr@logicsoft.co.in
+:*:@@p::shrayasr@gmail.com
 
 ;;;;;;;;;;;;;;; CONVENTIONAL COMMENTS
 ;;;;;;;;;;;;;;; Used for code review on github
 
 :*:,crp::**Praise:**`n`n
 :*:,crs::**Suggestion:**`n`n
+:*:,cri::**Nit:**`n`n
 :*:,crn::**Note:**`n`n
 :*:,crq::**Question:**`n`n
 :*:,crt::**Thought:**`n`n
@@ -36,6 +41,8 @@
 
 :*:,,wc::D:\work\code\
 :*:,,d::D:\dump\
+:*:,,192::192.168.160.
+
 
 
 ;;;;;;;;;;;;; Emojis
