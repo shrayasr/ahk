@@ -1,11 +1,34 @@
+;; RAlt Left Mouse 
+;; Open link in firefox
+;; Highlight the link and AHK Key + click to open in firefox
+;; This will NOT work for links that have names 
+RButton & LButton::
+{
+  Run "firefox.exe " A_Clipboard 
+}
+
+;; AHK says that when you use combination keys, the first
+;; key gets blocked and needs to be restored
+RButton::RButton 
+
 ;; RAlt T 
-;; TickTick 
+;; TickTick
+;; Just RAlt + T launches app
+;; RAlt + T, t launches the quick add part of the app
 <^>!t::
 {
-    activateorlaunch(
-        "ahk_exe TickTick.exe",
-        "C:\Program Files (x86)\TickTick\TickTick.exe"
-    )
+    nextKeyDetails := WaitForNextKey("t", ".3")
+    if(nextKeyDetails.errorLevel = "Timeout")
+    {
+      activateorlaunch(
+          "ahk_exe TickTick.exe",
+          "C:\Program Files (x86)\TickTick\TickTick.exe"
+      )
+    }
+    else if (nextKeyDetails.errorLevel = "EndKey")
+    {
+      Send("!+a")
+    }
 }
 
 ;; RAlt F 
@@ -16,6 +39,23 @@
         "ahk_exe firefox.exe",
         "C:\Program Files\Mozilla Firefox\firefox.exe -P `"Shrayas`""
     )
+}
+
+;; Win V
+;; Resend the hotkey to activate Ditto (clipboard manager)
+#v::
+{
+  Send("^!+#{F10}")
+}
+
+;; Win Z
+;; Sleep
+#z::
+{
+  WinActivate "ahk_class Shell_TrayWnd"
+  Send "#x"
+  Sleep 100
+  Send "us"
 }
 
 ;; Win E
@@ -94,7 +134,7 @@
 {
     ActivateOrLaunch(
         "WhatsApp ahk_exe ApplicationFrameHost.exe",
-        "D:\winstoreapps\WhatsApp.lnk"
+        "C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2444.5.0_x64__cv1g1gvanyjgm\WhatsApp.exe"
     )
 }
 
