@@ -58,9 +58,9 @@ RButton::RButton
   Send "us"
 }
 
-;; Win E
+;; RAlt E
 ;; Replace windows explorer with FreeCommander
-#e::
+<^>!e::
 {
     ActivateOrLaunch(
         "ahk_exe FreeCommander.exe",
@@ -183,6 +183,13 @@ RButton::RButton
         "ahk_exe speedcrunch.exe",
         "D:\bin\speedcrunch\speedcrunch.exe"
     )
+}
+
+;; RAlt 4
+;; Open Firefox pointing to GCPP40 feed
+<^>!4::
+{
+    Run "firefox.exe -P `"Shrayas`" https://opentakshashila.net/spaces/17525522/feed"
 }
 
 ;; RAlt @

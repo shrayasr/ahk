@@ -10,11 +10,19 @@
     SendText(A_Year . A_MM . A_DD . "T" . A_Hour . A_Min)
 }
 
+;;;;;;;;;;;;;;; Weeknotes
+
+:*:,,weeknote::New Weeknote ready: 2025/W.
 
 ;;;;;;;;;;;;;;; Emails and Phone
 
 :*:@@w::shrayasr@logicsoft.co.in
 :*:@@p::shrayasr@gmail.com
+
+;;;;;;;;;;;;;;; General text
+
+:*:,gm::Good Morning
+
 
 ;;;;;;;;;;;;;;; CONVENTIONAL COMMENTS
 ;;;;;;;;;;;;;;; Used for code review on github
@@ -41,6 +49,7 @@
 
 :*:,,wc::D:\work\code\
 :*:,,d::D:\dump\
+:*:,,gcpp::D:\personal\GCPP
 :*:,,192::192.168.160.
 
 
@@ -49,6 +58,10 @@
 
 :*:;;check::✅
 :*:;;down::⤵️
+:*:;;up::⤴️
+:*:;;hmm::🤔
+:*:;;+::👍🏾
+:*:;;-::👎🏾
 
 ;;;;;;;;;;;;; Browser hotstrings
 
